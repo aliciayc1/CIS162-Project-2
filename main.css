@@ -1,0 +1,98 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: antiquewhite;
+    font-family: "Comfortaa", sans-serif;
+    width: 1200px;
+}
+
+header {
+    text-align: center;
+    font-size: 2em;
+    background-color: burlywood;
+    line-height: 20px;
+    border: 1px solid burlywood;
+    font-family: "Chela One", cursive;
+    letter-spacing: 2.5px;
+    color: #784c14;
+}
+
+nav {
+    width: 1192px;
+    border: 4px solid #876104;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgoldenrod;
+}
+
+nav li a {
+    display: block;
+    float: left;
+    padding: 14px 14px;
+    text-decoration: none;
+    color: beige;
+}
+
+li a:hover {
+    background-color: #a87905;
+}
+
+#left {
+    float: left;
+    background-color: #ebd1b0;
+    clear: left;
+    width: 33%;
+    margin: 0px;
+    height: 27em;
+}
+
+#info {
+    float: left;
+    width: 34%;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #eddcc5;
+    margin-top: 0px;
+    height: 18em;
+}
+
+#right {
+    background-color: #ebd1b0;
+    clear: right;
+    float: right;
+    width: 33%;
+    height: 27em;
+}
+
+footer {
+    position: absolute;
+    width: 1200px;
+    margin-top: 27em;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    height: 1.5em;
+    padding-top: 7px;
+    
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 90%;
+}
