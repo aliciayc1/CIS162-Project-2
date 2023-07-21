@@ -5,23 +5,29 @@ body {
     background-color: antiquewhite;
     font-family: "Comfortaa", sans-serif;
     width: 1200px;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-auto-rows: 150px 50px auto 25px;
+    
 }
 
 header {
     text-align: center;
     font-size: 2em;
     background-color: burlywood;
-    line-height: 20px;
     border: 1px solid burlywood;
     font-family: "Chela One", cursive;
     letter-spacing: 2.5px;
     color: #784c14;
+    grid-column: 1/4;
+    grid-row: 1;
 }
 
 nav {
-    width: 1192px;
     border: 4px solid #876104;
     text-align: center;
+    grid-row: 2;
+    grid-column: 1/4;
 }
 
 nav ul {
@@ -48,43 +54,48 @@ li a:hover {
     float: left;
     background-color: #ebd1b0;
     clear: left;
-    width: 33%;
     margin: 0px;
-    height: 27em;
+    grid-column: 1;
+    grid-row: 3;
 }
 
 #info {
     float: left;
-    width: 34%;
     text-align: center;
     font-size: 1.5em;
+    height: 100%;
     background-color: #eddcc5;
     margin-top: 0px;
-    height: 18em;
+    grid-column: 2;
+    grid-row: 3;
 }
 
 #right {
     background-color: #ebd1b0;
     clear: right;
     float: right;
-    width: 33%;
-    height: 27em;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.gallery {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    height: 250px;
 }
 
 footer {
-    position: absolute;
-    width: 1200px;
-    margin-top: 27em;
-    font-weight: bold;
     background-color: white;
     text-align: center;
-    height: 1.5em;
-    padding-top: 7px;
+    grid-column: 1/4;
+    grid-row: 4;
     
 }
 
 footer a {
-    text-decoration: none;
     font-weight: bold;
     color: black;
 }
@@ -95,4 +106,30 @@ img {
     margin-right: auto;
     margin-top: 20px;
     width: 90%;
+}
+
+.contact {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+input[type=text] {
+    width: 20em;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #eddcc5;
+    border: 2px solid #c27d21;
+    border-radius: 5px;
+    width: 5em;
+    height: 2em;
+    cursor: pointer;
+    font-family: "Comfortaa", sans-serif;
 }
