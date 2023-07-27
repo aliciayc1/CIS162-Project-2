@@ -7,13 +7,12 @@ body {
     width: 1200px;
     display: grid;
     grid-template-columns: 33% 34% 33%;
-    grid-auto-rows: 150px 50px auto 25px;
+    grid-auto-rows: 150px 50px 650px 25px;
     
 }
 
 header {
     text-align: center;
-    font-size: 2em;
     background-color: burlywood;
     border: 1px solid burlywood;
     font-family: "Chela One", cursive;
@@ -21,6 +20,23 @@ header {
     color: #784c14;
     grid-column: 1/4;
     grid-row: 1;
+    font-size: 40px;
+    padding-top: 25px;
+}
+
+
+#column1 {
+    background-color: #ebd1b0;
+    grid-column: 1;
+    grid-row: 3;
+    padding: 20px;
+}
+
+#column2 {
+    background-color: #eddcc5;
+    grid-column: 2/4;
+    grid-row: 3;
+    padding: 20px;
 }
 
 nav {
@@ -65,9 +81,9 @@ li a:hover {
     font-size: 1.5em;
     height: 100%;
     background-color: #eddcc5;
-    margin-top: 0px;
     grid-column: 2;
     grid-row: 3;
+    padding: 10px;
 }
 
 #right {
@@ -84,7 +100,7 @@ li a:hover {
     text-align: center;
     background-color: white;
     border: 1px solid black;
-    height: 250px;
+    height: 270px;
 }
 
 footer {
@@ -132,4 +148,42 @@ input[type=button], input[type=submit], input[type=reset] {
     height: 2em;
     cursor: pointer;
     font-family: "Comfortaa", sans-serif;
+}
+
+.accordion {
+  --bs-accordion-active-bg: beige;
+}
+
+.card {
+    width: 350px;
+    margin-bottom: 20px;
+    height: 290px;
+}
+
+.card-title {
+    font-size: 1em;
+}
+
+.card-text {
+    font-size: 0.8em;
+    line-height: 15px;
+}
+
+.card img {
+    height: 190px;
+}
+
+.accordion-body {
+    height: 125px;
+}
+
+#breeds {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#supplies-info {
+    font-size: 1.2em;
+    line-height: 1.9em;
 }
