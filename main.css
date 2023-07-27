@@ -155,9 +155,9 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .card {
-    width: 350px;
+    width: 175px;
     margin-bottom: 20px;
-    height: 290px;
+    height: 280px;
 }
 
 .card-title {
@@ -169,9 +169,6 @@ input[type=button], input[type=submit], input[type=reset] {
     line-height: 15px;
 }
 
-.card img {
-    height: 190px;
-}
 
 .accordion-body {
     height: 125px;
